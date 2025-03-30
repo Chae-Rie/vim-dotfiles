@@ -29,5 +29,6 @@ require('lazy').setup({
     require 'plugins.misc',                 --- standalone plugins with very less configuration
     require 'plugins.nvim-dap',             --- debugger functionality
     require 'plugins.nvim-dap-ui',          --- debugger ui 
-    require 'plugins.toggleterm'            --- nice to have
+    require 'plugins.toggleterm',           --- nice to have
+    require 'plugins.cmake-tools',          --- makes CMake even more smooth
 }) --- end setup
