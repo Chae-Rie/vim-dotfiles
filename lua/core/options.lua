@@ -21,7 +21,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 --- makes clipboard globally useable after yanking
-vim.o.clipboard = 'unnamedplus' 
+vim.o.clipboard = 'unnamedplus'
 
 vim.opt.termguicolors = true --- enable highlighting groups in the terminal
 

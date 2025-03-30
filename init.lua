@@ -27,6 +27,7 @@ require('lazy').setup({
     require 'plugins.gitsigns',             --- nice viusals for working with git
     require 'plugins.indent_blankline',     --- nice visuals for indicating the indentation
     require 'plugins.misc',                 --- standalone plugins with very less configuration
-    require 'plugins.nvim-dap',
-    require 'plugins.nvim-dap-ui'
+    require 'plugins.nvim-dap',             --- debugger functionality
+    require 'plugins.nvim-dap-ui',          --- debugger ui 
+    require 'plugins.toggleterm'            --- nice to have
 }) --- end setup
