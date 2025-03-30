@@ -75,12 +75,7 @@ vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', opts)
 vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', opts)
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', opts)
 
--- tabs
-vim.keymap.set('n', '<leader>to', ':tabnew<CR>', opts) -- open new tab
-vim.keymap.set('n', '<leader>tx', ':tabclose<CR>', opts) -- close current tab
-vim.keymap.set('n', '<leader>tn', ':tabn<CR>', opts) --  go to next tab
-vim.keymap.set('n', '<leader>tp', ':tabp<CR>', opts) --  go to previous tab
-
+-- The tabs of the different files are buffers... use these commands to work with them
 vim.keymap.set('n', '<leader>x', ':Bdelete!<CR>', opts) -- close buffer
 vim.keymap.set('n', '<leader>b', '<cmd> enew <CR>', opts) -- new buffer
 
@@ -116,9 +111,9 @@ vim.keymap.set('n', '<leader>do', function()
   diagnostics_active = not diagnostics_active
 
   if diagnostics_active then
-    vim.diagnostic.enable(0)
+    vim.diagnostic.enable(true)
   else
-    vim.diagnostic.disable(0)
+    vim.diagnostic.enable(false)
   end
 end)
 

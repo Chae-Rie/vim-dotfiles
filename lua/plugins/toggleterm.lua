@@ -10,6 +10,7 @@ return {
       open_mapping = [[<c-t>]],
       direction = "horizontal",
       terminal_mappings = true,
+      hide_numbers = true,
       start_in_insert = true,
       close_on_exit = true,
     },
